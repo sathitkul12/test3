@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บอกรักแฟน - สุขสันต์วันวาเลนไทน์</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 10%;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .message {
+            font-size: 24px;
+            color: #d63384;
+        }
+        .btn-love {
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn-love:hover {
+            background-color: #ff3366;
+        }
+        .lover-video, .lover-img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>สุขสันต์วันวาเลนไทน์นะที่รัก</h1>
+        <img src="img/476577553_1135979694329738_7512358834929083241_n.jpg" alt="รูปแฟน" class="lover-img">
+        <video class="lover-video" controls>
+            <source src="img/" type="video/mp4">
+            เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+        </video>
+        <p class="message" id="loveMessage">มีความสุขมาก ๆ นะ รักเธอที่สุดเลย!</p>
+        <button class="btn-love" onclick="showMoreLove()">กดเพื่อรับความรักเพิ่ม ❤️</button>
+    </div>
+
+    <script>
+        function showMoreLove() {
+            const message = document.getElementById('loveMessage');
+            message.innerHTML += ' รักเธอมากขึ้นทุกวัน! ❤️';
+        }
+    </script>
+</body>
+</html>
